@@ -113,6 +113,7 @@ def load_decrypted_zip(zip_file_path: str, secure_key_path: str = None) -> bytes
 
 def to_encrypt_zip(zip_bytes: bytes, zip_file_path: str, secure_key_path: str = None, update_key: bool = False) -> None:
     """
+    将zip文件字节加密后存入磁盘
 
     :param zip_bytes: zip格式的明文字节数据
     :param zip_file_path: 要储存zip文件的路径
